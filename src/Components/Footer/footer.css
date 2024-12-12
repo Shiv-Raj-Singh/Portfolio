@@ -1,0 +1,130 @@
+/* General Footer Styles */
+.footer-container {
+    background-color: #1e2a3a; /* Dark background */
+    color: #f8fafc; /* Light text color */
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.footer-parent {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.colz {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    position: relative;
+}
+
+.social-icon {
+    font-size: 30px;
+    color: #f8fafc;
+    transition: color 0.3s ease;
+}
+
+.social-name {
+    display: none; /* Initially hide the name */
+    position: absolute;
+    top: -25px; /* Position the name above the icon */
+    background-color: #333;
+    color: #f8fafc;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+.social-link:hover .social-name {
+    display: block; /* Show the name when hovering */
+    top: -35px; /* Adjust the position when hovering */
+}
+
+.social-icon:hover {
+    color: #60a5fa; /* Light blue color on hover */
+}
+
+.leetcode, .hackerrank {
+    font-size: 16px;
+    color: #f8fafc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.leetcode:hover, .hackerrank:hover {
+    color: #60a5fa;
+}
+
+.foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 20px;
+    color: #60a5fa;
+    margin-right: 10px;
+}
+
+.contact-item .span {
+    font-size: 16px;
+    color: #f8fafc;
+}
+
+/* Footer Bottom */
+.footer-text {
+    color: #f8fafc;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .colz {
+        justify-content: center;
+    }
+
+    .contact-item {
+        font-size: 14px;
+    }
+
+    .social-icon {
+        font-size: 28px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icon {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .contact-item i {
+        font-size: 18px;
+    }
+
+    .footer-text {
+        font-size: 10px;
+    }
+}

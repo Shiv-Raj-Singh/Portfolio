@@ -1,0 +1,104 @@
+/* NavbarComponent.css */
+
+/* Main Navbar container */
+.navbar-custom {
+    background: linear-gradient(135deg, #2b2b2b, #111); /* Dark gradient for sleek, modern feel */
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Subtle shadow to pop against page */
+    z-index: 10; /* Ensures navbar stays on top of other content */
+  }
+  
+  /* Brand logo */
+  .brand-logo {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem; /* Larger size for brand */
+    font-weight: 700;
+    color: #ffffff; /* White logo for better contrast */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .brand-logo:hover {
+    color: #00d4ff; /* Cyan color on hover for dynamic effect */
+    text-decoration: none;
+  }
+  
+  /* Navbar Links */
+  .nav-link-custom {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.1rem;
+    color: #dcdcdc; /* Light gray text for a soft contrast */
+    padding: 0.5rem 1rem;
+    margin-left: 1.5rem;
+    border-radius: 5px; /* Smooth rounded corners */
+    transition: all 0.3s ease;
+  }
+  
+  .nav-link-custom:hover {
+    color: #ffffff; /* White text for active links */
+    background-color: #007bff; /* Blue background on hover */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Light blue shadow effect */
+    text-decoration: none;
+  }
+  
+  /* Custom Toggle button (hamburger) */
+  .custom-toggler {
+    border: none;
+  }
+  
+  .custom-toggler .navbar-toggler-icon {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff; /* White lines for the hamburger */
+    position: relative;
+    display: block;
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before,
+  .custom-toggler .navbar-toggler-icon::after {
+    content: "";
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff; /* White lines */
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-toggler .navbar-toggler-icon::before {
+    top: -8px;
+  }
+  
+  .custom-toggler .navbar-toggler-icon::after {
+    top: 8px;
+  }
+  
+  /* Hover effect for toggle button */
+  .custom-toggler:hover .navbar-toggler-icon,
+  .custom-toggler:hover .navbar-toggler-icon::before,
+  .custom-toggler:hover .navbar-toggler-icon::after {
+    background-color: #00d4ff; /* Cyan color on hover */
+  }
+  
+  /* Navbar link styling for mobile view */
+  .navbar-nav .nav-link-custom {
+    margin-left: 0; /* Remove left margin for mobile */
+    margin-bottom: 0.8rem; /* More space between links in mobile view */
+    padding: 0.8rem; /* Increase padding for easier touch */
+  }
+  
+  /* Adjust navbar collapse in mobile */
+  @media (max-width: 991px) {
+    .navbar-nav {
+      text-align: center;
+    }
+    .navbar-collapse {
+      background-color: #1f1f1f; /* Dark background for collapsed menu */
+      padding: 1rem;
+    }
+    .navbar-toggler-icon {
+      background-color: #ffffff; /* Ensures visibility on dark background */
+    }
+  }
+  

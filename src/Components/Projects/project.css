@@ -1,0 +1,124 @@
+/* General Layout */
+.projects-container {
+    padding: 50px 20px;
+    background-color: #d6deea3d; /* Deep dark background for overall layout */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Spacing between projects */
+    align-items: center;
+  }
+  
+  /* Project Card */
+  .project-card {
+    width: 100%;
+    max-width: 800px; /* Limit width for large screens */
+    padding: 25px;
+    /* text-align: left; */
+    border-radius: 15px;
+    background-color: #161b228b; /* Lighter dark for contrast */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.9);
+    background-color: #21262d; /* Slightly lighter background on hover */
+  }
+  
+  /* Project Header */
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .project-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #04c5f0; /* Soft red-pink for title */
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .project-title:hover {
+    color: #f08879; /* Slightly brighter on hover */
+  }
+  
+  .project-links a {
+    text-decoration: none;
+    color: #58a6ff; /* Bright blue for links */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 1rem; /* Clean link text size */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icon {
+    margin-right: 5px;
+    font-size: 1.3rem; /* Balanced icon size */
+  }
+  
+  .project-link:hover {
+    color: #79c0ff; /* Lighter blue on hover */
+    transform: scale(1.1); /* Slight enlargement for hover feedback */
+  }
+  
+  /* Project Description */
+  .project-description {
+    margin-top: 10px;
+  }
+  
+  .tech-stack {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #c9d1d9; /* Soft light grey for tech stack */
+  }
+  
+  .project-body {
+    margin: 0;
+    padding-left: 20px;
+    list-style-position: inside;
+  }
+  
+  .project-point {
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.8;
+    padding: 3px;
+    color: #f0f6fc; /* Crisp white for points */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .project-card {
+      padding: 20px;
+    }
+  
+    .project-title {
+      font-size: 1.4rem;
+    }
+  
+    .icon {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .project-card {
+      padding: 15px;
+    }
+  
+    .project-title {
+      font-size: 1.3rem;
+    }
+  
+    .icon {
+      font-size: 0.9rem;
+    }
+  }
+  

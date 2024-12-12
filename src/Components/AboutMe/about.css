@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e86a6a;
+  color: #333;
+}
+
+/* About Me Section Styling */
+.about-container {
+  background-color: #87898a;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.about-section {
+  display: flex;
+  background-color: #08161f;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  background-color: #2b2b32; /* Turquoise background */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: #08efa2;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/* Skills Section Styling */
+.skills-section {
+  background-color: #ff4081; /* Pink background */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-card {
+  padding: 10px;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: #060303;
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.skills-title:hover {
+  color: #654bf7;
+}
+
+.skill-item {
+  background-color: #2c2c2c; /* Dark background for skill boxes */
+  color: #a80606;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  height: 100px; /* Fixed height */
+}
+
+.skill-item:hover {
+  background-color: #333;
+  transform: translateY(-10px);
+  background-color: #042b46;
+  height: 170px; 
+}
+
+.skill-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+.skill-description {
+  font-size: 1rem;
+  color: #f0f0f0;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.skill-item:hover .skill-description {
+  opacity: 1; /* Show on hover */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .skill-item {
+    padding: 15px;
+    height: 80px; /* Adjust height for smaller screens */
+  }
+
+  .skill-name {
+    font-size: 1.2rem;
+  }
+}

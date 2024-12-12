@@ -1,0 +1,112 @@
+/* General Page Styles */
+.contact-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #2e3a4e, #131b28);
+  color: #f8fafc;
+  padding: 20px;
+}
+
+.contact-container {
+  background-color: #3c4858;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Title Styling */
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Input and Textarea Styling */
+.form-control {
+  background: #525e6b;
+  border: 1px solid #3b82f6;
+  color: #f8fafc;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+  color: #d1d5db;
+}
+
+.form-control:focus {
+  outline: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  height: 45px;
+  border-color: #0452b1;
+  background-color: #e3e5ea9c;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
+}
+
+/* Label Highlight */
+.label-highlight {
+  color: #d1d5db;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Button Styling */
+.btn-custom {
+  background: #3b82f6;
+  border: none;
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.btn-custom:hover {
+  background: #2563eb;
+  color: #e2e8f0;
+  box-shadow: 0 5px 15px rgba(37, 99, 235, 0.5);
+}
+
+.btn-custom:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
+}
+
+/* Form Alignment */
+form {
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 15px 20px;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+}

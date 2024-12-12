@@ -1,0 +1,144 @@
+/* General Page Styling */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk9ti0H0X6yZvxLPZi-jiR2lqPztB-5KTbHw&s');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.profile-details-name {
+  margin-bottom: 10px;  /* Reduced margin */
+}
+
+.primary-text {
+  font-size: 2rem;
+}
+
+.highlighted-text {
+  color: #ffb84d; /* Highlighted text color */
+}
+
+.profile-details-role h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;  /* Reduced margin */
+}
+
+.profile-role-tagline {
+  font-size: 1.2rem;
+  margin-bottom: 15px;  /* Reduced margin */
+}
+
+.profile-option {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.profile-option .btn {
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+
+.primary-btn {
+  background-color: #3498db; /* Blue background for Hire Me button */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.highlighted-btn {
+  background-color: #f39c12; /* Yellow-orange background for Get Resume button */
+  border: none;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.highlighted-btn:hover {
+  background-color: #e67e22; /* Darker yellow-orange on hover */
+}
+
+/* Profile Image Styling */
+.profile-picture {
+  margin-top: 20px;  /* Reduced margin */
+  margin-bottom: 20px;  /* Reduced margin */
+}
+
+.profile-img {
+  width: 350px;  /* Larger image size */
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover; /* Crop the image to center face */
+  object-position: top; /* Crop from the bottom to keep face visible */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  transform: translateY(-50px); /* Pull image down to ensure face visibility */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .primary-text {
+    font-size: 1.5rem;
+  }
+
+  .highlighted-text {
+    font-size: 1.5rem;
+  }
+
+  .profile-details-role h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-role-tagline {
+    font-size: 1rem;
+  }
+
+  .profile-option .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-container {
+    padding: 10px;
+  }
+
+  .primary-text {
+    font-size: 1.2rem;
+  }
+
+  .profile-role-tagline {
+    font-size: 0.9rem;
+  }
+
+  .profile-img {
+    width: 200px;
+    height: 200px;
+  }
+}
